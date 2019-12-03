@@ -35,6 +35,7 @@ header {
     flex-direction: column;
     flex: 0 1 50%;
     margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 #textbox {
@@ -50,6 +51,7 @@ header {
     display: flex;
     flex-direction: row;
     user-select: none;
+    cursor: pointer;
 }
 
 .button {
@@ -76,7 +78,6 @@ header {
     background: rgb(255, 93, 93)
 }
 
-
 #item-list {
     display: flex;
     flex-direction: column;
@@ -93,7 +94,7 @@ header {
 }
 
 #item-list li:last-child {
-  border-bottom: none;
+    border-bottom: none;
 }
 
 @media only screen and (max-width: 972px) {
