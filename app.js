@@ -44,7 +44,7 @@ function enterKeyPress() {
     })
 }
 
-// Creates a new list item and inserts the text in
+// Creates a new list item with the name, and a WORKING checkable checkbox
 function addToList(item) {
     if (textBoxText.value != "") {
         textBoxText.value = "";
