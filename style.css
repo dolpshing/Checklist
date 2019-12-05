@@ -103,19 +103,18 @@ header {
 
 #item-list li .checkbox {
     display: flex;
-    right: 0px;
     border: 2px solid black;
     border-radius: 5px;
-    width: 1em;
-    height: 1em;
+    width: 1.2em;
+    height: 1.2em;
 }
 
 .unchecked {
-  background: white;
+    background: white;
 }
 
 .checked {
-  background: #03fc62;
+    background: #03fc62;
 }
 
 @media only screen and (max-width: 972px) {
