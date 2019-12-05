@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -16,8 +17,8 @@ header {
     display: flex;
     align-items: center;
     background: greenyellow;
-    height: 20%;
-    font-size: 150%;
+    height: 30%;
+    font-size: 200%;
     padding: 30px;
     letter-spacing: 5px;
     border-bottom: 3px black solid;
@@ -33,18 +34,18 @@ header {
     border-radius: 15px;
     display: flex;
     flex-direction: column;
-    flex: 0 1 50%;
+    flex: 0 1 80%;
     margin-top: 50px;
     margin-bottom: 50px;
 }
 
 #textbox {
-    height: 50px;
+    height: 2.5em;
     margin: 10px 10px auto 10px;
     border: 3px solid black;
     border-radius: 15px;
-    font-size: 25px;
-    padding: 5px;
+    font-size: 2em;
+    padding: 0.5em;
 }
 
 #buttons {
@@ -54,15 +55,15 @@ header {
 }
 
 .button {
-    height: 35px;
+    height: 2.5em;
     width: 33%;
-    margin: 10px;
+    margin: 2%;
     border: 2px solid black;
     border-radius: 15px;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 20px;
+    font-size: 1.5em;
     cursor: pointer;
 }
 
@@ -81,14 +82,14 @@ header {
 #item-list {
     display: flex;
     flex-direction: column;
-    margin: auto 10px 10px 10px;
+    margin: auto 1em 1em 1em;
     border: 3px solid black;
     border-radius: 15px;
     list-style: none;
 }
 
 #item-list li {
-    font-size: 20px;
+    font-size: 1.5em;
     padding: 10px;
     border-bottom: 1px solid gray;
     display: flex;
@@ -105,8 +106,8 @@ header {
     display: flex;
     border: 2px solid black;
     border-radius: 5px;
-    width: 1.2em;
-    height: 1.2em;
+    width: 1.5em;
+    height: 1.5em;
 }
 
 .unchecked {
@@ -114,7 +115,8 @@ header {
 }
 
 .checked {
-    background: #03fc62;
+    background: url(check.png) center no-repeat;
+    background-size: 1.3em;
 }
 
 @media only screen and (max-width: 972px) {
