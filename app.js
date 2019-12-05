@@ -24,6 +24,7 @@ function checkButtonPress() {
 
     clearButton.addEventListener("click", () => {
         console.log("clear button clicked");
+        clearSelected();
     })
 
     deleteAllButton.addEventListener("click", () => {
@@ -75,24 +76,17 @@ function addToList(item) {
 
 function clearSelected() {
     const selected = document.getElementsByClassName('checked');
-    let first = selected.firstElementChild;
-    while (first) {
-        first.remove();
-        first = selected.firstElementChild;
-    }
+    Array.from(selected).forEach((element) => {
+        element.parentElement.remove();
+    })
 }
 
 // Runs a loop that deletes every list item in itemList
 function deleteAllItems() {
-    // sets first to the first child element of the parent "itemList"
     let first = itemList.firstElementChild;
-    // while loop as long as there remains a "firstElementChild"
     while (first) {
-        // remove the child
         first.remove();
-        // as soon as the child is removed, assign first to the next first (second one, etc.)
         first = itemList.firstElementChild;
-        // eventually there will be no more children, and the loop will stop
-        // all items will be deleted
+
     }
 }
